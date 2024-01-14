@@ -1,0 +1,12 @@
+version: "2.1"
+
+services:
+  app:
+    build: .
+    # image: jccoder/nodejs-app-image-1
+    ports:
+      - 3001:3000
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
